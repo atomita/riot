@@ -161,4 +161,9 @@ describe('Node/io.js', function() {
     })
   })
 
+  it('render tag: opts is object', function() {
+    var tag = riot.render('opts-is-object')
+    var $ = cheerio.load(tag)
+    expect($('opts-is-object .result').text()).to.be('true')
+  })
 })

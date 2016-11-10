@@ -2316,6 +2316,14 @@ it('raw contents', function() {
 
     tags.push(tag)
   })
+
+  it('opts is object', function() {
+    var tag = riot.mount('opts-is-object')[0]
+
+    expect(tag.optsIsObject()).to.be(true)
+
+    tags.push(tag)
+  })
 })
 
 function getCarrotPos(dom) {

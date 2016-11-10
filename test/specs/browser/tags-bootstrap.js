@@ -171,5 +171,6 @@ loadTagsAndScripts([
     attrs: {
       cls: 'classy'
     }
-  }
+  },
+  'tag/opts-is-object.tag'
 ])
