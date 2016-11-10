@@ -6955,13 +6955,13 @@ exports.tmpl = tmpl;
 Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-/* Riot v2.6.7, @license MIT */
+/* Riot v2.6.8-alpha, @license MIT */
 
 ;(function(window, undefined) {
   'use strict';
 var tmpl = cspTmpl.tmpl,
   brackets = cspTmpl.brackets
-var riot = { version: 'v2.6.7', settings: {} },
+var riot = { version: 'v2.6.8-alpha', settings: {} },
   // be aware, internal usage
   // ATTENTION: prefix the global dynamic variables with `__`
 
@@ -7992,7 +7992,7 @@ function parseExpressions(root, tag, expressions) {
 function Tag(impl, conf, innerHTML) {
 
   var self = riot.observable(this),
-    opts = inherit(conf.opts) || {},
+    opts = inherit(conf.opts || {}),
     parent = conf.parent,
     isLoop = conf.isLoop,
     hasImpl = conf.hasImpl,
